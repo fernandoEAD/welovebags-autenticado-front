@@ -1,0 +1,27 @@
+<form>
+    <h1>ATUALIZANDO PRODUTO</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Marca</mat-label>
+        <input matInput [(ngModel)]="produto.marca" [formControl]="marca" required type="text" name="marca" placeholder="Ex..." maxlength="100">
+        <mat-error *ngIf="marca.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Titulo</mat-label>
+        <input matInput [(ngModel)]="produto.titulo"  [formControl]="titulo" required type="text" name="titulo" placeholder="Ex..." maxlength="100">
+        <mat-error *ngIf="titulo.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto</mat-label>
+        <textarea matInput [(ngModel)]="produto.texto" [formControl]="texto" required type="text" name="texto" placeholder="Ex..." maxlength="2000000"></textarea>
+        <mat-error *ngIf="texto.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="update()" [disabled]="getMessage()" class="mat-elevation-z8" mat-stroked-button color="primary"> ATUALIZAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>

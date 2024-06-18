@@ -1,0 +1,4 @@
+depois trocar a versão do node
+nvm use 16.20.2
+comando pra rodar o projeto com angular 11
+npx -p @angular/cli@11.0.5 ng serve

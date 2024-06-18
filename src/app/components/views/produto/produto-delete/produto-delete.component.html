@@ -1,0 +1,23 @@
+<form>
+    <h1>DELETANDO PRODUTO</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Marca</mat-label>
+        <input matInput [(ngModel)]="produto.marca" type="text" name="marca" disabled>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Titulo</mat-label>
+        <input matInput [(ngModel)]="produto.titulo" type="text" name="titulo" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto</mat-label>
+        <textarea matInput [(ngModel)]="produto.texto" type="text" name="texto" disabled></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()" class="mat-elevation-z8" mat-stroked-button color="primary"> DELETAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>

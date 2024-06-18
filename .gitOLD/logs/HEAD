@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 b6e493fb9e56416ab2539555f465d5af40bf9d54 Brenda-Rabelo <brenda16rabelo@gmail.com> 1716517902 -0300	commit (initial): initial commit
+b6e493fb9e56416ab2539555f465d5af40bf9d54 a556c1ef4fd24eb53d21afc14ba56ff77a78a605 Brenda-Rabelo <brenda16rabelo@gmail.com> 1716518203 -0300	commit: Commit inicial
+a556c1ef4fd24eb53d21afc14ba56ff77a78a605 a57df2d28b7d78a5db9cdb9c9979e5d6a7b7c680 Brenda-Rabelo <brenda16rabelo@gmail.com> 1716853217 -0300	commit: criei o header inicial
+a57df2d28b7d78a5db9cdb9c9979e5d6a7b7c680 1fcc4f149c4be6728aac48070cbadd72184c549b Brenda-Rabelo <brenda16rabelo@gmail.com> 1716853881 -0300	commit: criei o footer
+1fcc4f149c4be6728aac48070cbadd72184c549b 1da776601b28def5ce73eb3aa13a87443a592291 Brenda-Rabelo <brenda16rabelo@gmail.com> 1716857031 -0300	commit: implementando o nav
+1da776601b28def5ce73eb3aa13a87443a592291 a112c905a37a53609e03ba85c825cd2b06a9d50f Brenda-Rabelo <brenda16rabelo@gmail.com> 1716859871 -0300	commit: criei a classe routingmodule
+a112c905a37a53609e03ba85c825cd2b06a9d50f 801333f0b286c3ee1ee716e5c38c0ed247288268 Brenda-Rabelo <brenda16rabelo@gmail.com> 1716943409 -0300	commit: home implementado com rota
+801333f0b286c3ee1ee716e5c38c0ed247288268 d11d73ff22ac36b706269916bec9646d4b6e8c15 Brenda-Rabelo <brenda16rabelo@gmail.com> 1717094890 -0300	commit: criando categorias
+d11d73ff22ac36b706269916bec9646d4b6e8c15 5e4b90e94a0a6b7c276dc22bf66f228561cddb9f Brenda-Rabelo <brenda16rabelo@gmail.com> 1717464538 -0300	commit: categoria-read
+5e4b90e94a0a6b7c276dc22bf66f228561cddb9f 956c15a466cb0077ef2246cf06bde4022a992962 Fernando <fernandodanatas1943@gmail.com> 1718374744 -0300	commit: finalizado
+956c15a466cb0077ef2246cf06bde4022a992962 956c15a466cb0077ef2246cf06bde4022a992962 Fernando <fernandodanatas1943@gmail.com> 1718375222 -0300	checkout: moving from master to brenda
+956c15a466cb0077ef2246cf06bde4022a992962 956c15a466cb0077ef2246cf06bde4022a992962 Fernando <fernandodanatas1943@gmail.com> 1718676762 -0300	checkout: moving from brenda to master
