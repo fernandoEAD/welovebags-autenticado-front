@@ -19,4 +19,8 @@ export class HeaderComponent implements OnInit {
     this.loginService.removerToken();
     this.router.navigate(['/login']);
   }
+
+  hasToken(): boolean {
+    return !!localStorage.getItem('token');
+  }
 }

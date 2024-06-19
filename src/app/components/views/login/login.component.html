@@ -1,17 +1,19 @@
-<form>
-  <h1>Tela de acesso</h1>
-
-  <mat-form-field class="form">
-      <mat-label>Nome</mat-label>
-      <input matInput [(ngModel)]="login.username" type="text" name ="usuario" (keyup.enter)="logar()" placeholder="Ex...">
-  </mat-form-field>
-
-  <mat-form-field class="form">
-      <mat-label>PASSWORD</mat-label>
-      <input matInput [(ngModel)]="login.password" type="password" name ="senha" (keyup.enter)="logar()" placeholder="Ex...">
-  </mat-form-field>
-
-  <div class="buttons">
-      <button (click)="logar()" class="mat-elevation-z8" mat-stroked-button color="primary"> ACESSAR </button>
-  </div>
-</form>
+<div class="content">
+    <div class="title">
+        <h1>Tela de acesso</h1>
+    </div>
+    <div class="mat-elevation-z8 content-table">
+        <mat-form-field class="form">
+            <mat-label>USERNAME</mat-label>
+            <input matInput [(ngModel)]="login.username" type="text" name="usuario" (keyup.enter)="logar()">
+        </mat-form-field>
+      
+        <mat-form-field class="form">
+            <mat-label>PASSWORD</mat-label>
+            <input matInput [(ngModel)]="login.password" type="password" name="senha" (keyup.enter)="logar()">
+        </mat-form-field>
+    </div>
+    <div class="buttons">
+        <button (click)="logar()" class="mat-elevation-z8" mat-stroked-button color="primary"> ACESSAR </button>
+    </div>
+</div>

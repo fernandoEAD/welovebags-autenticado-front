@@ -34,6 +34,7 @@ import { LoginComponent } from "./components/views/login/login.component";
 import { MeuHttpInterceptor } from './auth/http-interceptor.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,7 +70,7 @@ import { MeuHttpInterceptor } from './auth/http-interceptor.service';
     MatFormFieldModule,
     MatSnackBarModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     {

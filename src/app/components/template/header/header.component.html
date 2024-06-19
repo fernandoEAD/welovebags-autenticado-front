@@ -1,15 +1,19 @@
 <mat-toolbar class="header">
-  <span>
-    <img src="assets/img/bag.png" alt="">
+  <span class="logo-container">
+    <img src="assets/img/bag.png" alt="" />
+    <h1>WE LOVE BAGS</h1>
   </span>
-  <span>
-    <h1>
-      WE LOVE BAGS
-    </h1>
-  </span>
-  <span>
+  <span class="button-container">
     <div class="buttons">
-      <button (click)="logout()" class="mat-elevation-z8" mat-stroked-button color="primary"> LOGOUT </button>
-  </div>
+      <button
+        *ngIf="hasToken()"
+        (click)="logout()"
+        class="mat-elevation-z8"
+        mat-stroked-button
+        color="primary"
+      >
+        LOGOUT
+      </button>
+    </div>
   </span>
 </mat-toolbar>

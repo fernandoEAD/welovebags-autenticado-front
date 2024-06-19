@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Login } from '../../../auth/login';
 import { LoginService } from '../../../auth/login.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 interface TokenResponse {
@@ -18,24 +19,31 @@ interface TokenResponse {
 export class LoginComponent {
   login: Login = new Login();
 
-  constructor(private router: Router, private loginService: LoginService) {
+  constructor(private router: Router, private loginService: LoginService, private snackBar: MatSnackBar) {
     this.loginService.removerToken();
   }
 
   logar() {
     this.loginService.logar(this.login).subscribe({
-      next: (response: TokenResponse )=> {
+      next: (response: TokenResponse) => {
         const token = response.access_token;
-        if (token) { //o usuário e senha digitados estavam corretos
+        if (token) {
           this.loginService.addToken(token);
-          console.log("aqui: ", token)
+          console.log("aqui: ", token);
           this.router.navigate(['/home']);
-        } else { //ou o usuário ou a senha estão incorretos
-          alert('usuário ou senha incorretos!');
+          this.loginService.mensagem('Login bem-sucedido!');
+        } else {
+          this.loginService.mensagem('Usuário ou senha incorretos!');
         }
       },
       error: erro => {
-        alert('error na autenticação');
+        if (erro.error && erro.error.errors) {
+          for (let i = 0; i < erro.error.errors.length; i++) {
+            this.loginService.mensagem(erro.error.errors[i].message);
+          }
+        } else {
+          this.loginService.mensagem('Erro na autenticação');
+        }
       }
     });
   }

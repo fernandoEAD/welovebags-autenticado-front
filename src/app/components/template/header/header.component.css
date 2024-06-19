@@ -3,16 +3,27 @@ img {
 }
 
 .header {
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribui espaço entre os elementos */
   height: 10%;
 }
 
-span {
+.logo-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
-h1 {
+.logo-container h1 {
+  margin: 0;
   padding-left: 1.2rem;
   font-size: 1.5rem;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Empurra o botão para a direita */
 }
