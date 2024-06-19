@@ -12,10 +12,12 @@ export class MeuHttpInterceptor implements HttpInterceptor {
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     // Inclui o token do localstorage em cada requisição HTTP (header)
     const token = localStorage.getItem('token');
+    console.log(token)
     if (token && !this.router.url.includes('/login')) {
       request = request.clone({
         setHeaders: { Authorization: 'Bearer ' + token },
       });
+      console.log(request)
     }
 
     // Tratamento dos responses... podemos tratar os erros genericamente aqui

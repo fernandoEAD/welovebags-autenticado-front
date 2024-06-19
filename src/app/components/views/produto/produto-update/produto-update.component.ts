@@ -66,7 +66,7 @@ export class ProdutoUpdateComponent implements OnInit {
     }
 
     if (this.texto.invalid) {
-      return "O campo TEXTO deve conter entre 10 e 2.000.000 carateres";
+      return "O campo TEXTO deve conter entre 10 e 300 carateres";
     }
 
     return false;

@@ -3,19 +3,19 @@
 
     <mat-form-field class="form">
         <mat-label>Marca</mat-label>
-        <input matInput [(ngModel)]="produto.marca" [formControl]="marca" required type="text" name="marca" placeholder="Ex. Curso Spring Boot com Angular 10" maxlength="100">
+        <input matInput [(ngModel)]="produto.marca" [formControl]="marca" required type="text" name="marca" placeholder="Ex. Lacoste" maxlength="100">
         <mat-error *ngIf="marca.invalid">{{ getMessage() }}</mat-error>
     </mat-form-field>
 
     <mat-form-field class="form">
         <mat-label>Titulo</mat-label>
-        <input matInput [(ngModel)]="produto.titulo"  [formControl]="titulo" required type="text" name="titulo" placeholder="Ex. Valdir Cezar" maxlength="100">
+        <input matInput [(ngModel)]="produto.titulo"  [formControl]="titulo" required type="text" name="titulo" placeholder="Ex. Sapato" maxlength="100">
         <mat-error *ngIf="titulo.invalid">{{ getMessage() }}</mat-error>
     </mat-form-field>
 
     <mat-form-field class="form">
         <mat-label>Texto</mat-label>
-        <textarea matInput [(ngModel)]="produto.texto" [formControl]="texto" required type="text" name="texto" placeholder="Ex. Lorem ipsum" maxlength="2000000"></textarea>
+        <textarea matInput [(ngModel)]="produto.texto" [formControl]="texto" required type="text" name="texto" placeholder="Ex. descrição do produto" maxlength="2000000"></textarea>
         <mat-error *ngIf="texto.invalid">{{ getMessage() }}</mat-error>
     </mat-form-field>
 

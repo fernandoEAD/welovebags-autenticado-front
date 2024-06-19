@@ -9,6 +9,8 @@ import { Router } from "@angular/router";
   styleUrls: ["./categoria-read.component.css"],
 })
 export class CategoriaReadComponent implements OnInit {
+
+  
   categorias: Categoria[] = [];
 
   displayedColumns: string[] = ["id", "nome", "descricao", "produtos", "acoes"];
