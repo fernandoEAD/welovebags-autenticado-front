@@ -42,7 +42,7 @@ export class LoginComponent {
             this.loginService.mensagem(erro.error.errors[i].message);
           }
         } else {
-          this.loginService.mensagem('Erro na autenticação');
+          this.loginService.mensagem('Credenciais inválidas!');
         }
       }
     });
